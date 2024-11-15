@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB DS - PYQS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background-image: url('/api/placeholder/1920/1080');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .header .tab {
+      background-color: #4267B2;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .header .tab:hover {
+      background-color: #365899;
+    }
+
+    .boxes-container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .box {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .box-text {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>WEB DS</h1>
+    <a href="#" class="tab">PYQS</a>
+  </header>
+
+  <div class="boxes-container">
+    <a href="#" class="box">
+      <span class="box-text">ESE</span>
+    </a>
+    <a href="#" class="box">
+      <span class="box-text">CAT</span>
+    </a>
+  </div>
+</body>
+</html>
