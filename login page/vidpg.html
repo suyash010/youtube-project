@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DS - Lectures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .header-tab {
+            background-color: #4267B2;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            background-color: #4267B2;
+            width: 300px;
+            border-radius: 10px;
+            padding: 1rem;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+
+        .topic-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .topic-btn:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .video-container {
+            background-color: #000000dc;
+            border-radius: 10px;
+            padding: 1rem;
+            aspect-ratio: 16/8.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .description {
+            background-color: #4267B2;
+            border-radius: 10px;
+            padding: 1rem;
+            color: white;
+        }
+
+        /* Scrollbar styling */
+        .sidebar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="/api/placeholder/40/40" alt="WEB DS Logo" class="logo">
+            <span class="logo-text">WEB DS</span>
+        </div>
+        <a href="#" class="header-tab">Lectures</a>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <button class="topic-btn">Introduction to Probability distro</button>
+            <a href="file:///C:/Users/SUYASH/Documents/login%20page/mathsvideo/introductiontomatrix.html">
+            <button class="topic-btn">Introduction to Matrix</button>
+        </a>
+            <button class="topic-btn">Matrices and Types</button>
+        <a href="https://www.youtube.com/embed/Jm5g2uhnH4M?si=jVkQ6RxdL7cm7asX">
+            <button class="topic-btn">Rank of Matrix</button>
+        </a>
+            <button class="topic-btn">Matrix operation</button>
+            <button class="topic-btn">Field of Matrix</button>
+            <button class="topic-btn">Eigenvalues and Vectors</button>
+            <button class="topic-btn">Matrix Transformation</button>
+            <button class="topic-btn">Linear Independence</button>
+            <button class="topic-btn">Matrix Applications</button>
+        </aside>
+
+        <div class="content-area">
+            <div class="video-container">
+                <iframe 
+                    class="video-frame"
+                    src="https://www.youtube.com/embed/uQ_lCHd2TQU?si=H4hiUXy0rmG53MHu"
+                    title="Video Player"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="description">
+                <h2>Introduction to Probability Distributions</h2>
+                <p>Select a topic from the sidebar to view its video content and description.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
